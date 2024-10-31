@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil de Usuario</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.16.9/xlsx.full.min.js"></script>
+</head>
+<body>
+    <div class="profileContainer">
+        <h1>Perfil de Usuario</h1>
+        <div class="profile-info">
+            <div class="photo-container">
+                <img id="profile-picture" src="default-profile.png" alt="Foto de perfil" class="profile-img">
+                <input type="file" id="upload-picture" accept="image/*">
+            </div>
+            <h2 id="user-name">Nombre: <span></span></h2>
+            <p id="user-email">Correo: <span></span></p>
+            <p id="user-address">Dirección: <span></span></p>
+            <button id="edit-password-button">Editar Contraseña</button>
+            <button id="download-button">Descargar Información</button>
+            <button id="reset-picture">Restablecer Foto</button>            
+            <button id="save-changes">Guardar Cambios</button>
+            <button id="logoutButton">Cerrar Sesión</button>
+        </div>
+    </div>
+
+    <script src="js/profile.js"></script>
+    <script src="js/conection.js"></script>
+</body>
+</html>
